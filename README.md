@@ -13,11 +13,15 @@ This repository packages MRSystems.json and utilities to load/query the availabl
 
 ## Usage
 
-Python (installed package):
+### Raw specifications in JSON format
+- The MRSystems.json file contains the specifications. You can parse this file directly in any language that supports JSON to access the data.
+- The file is located under src/pulseq_systems/MRSystems.json in the repository.
+
+### Python
 - Import the package and use the provided helpers to list systems and obtain pulseq-compatible parameters.
 - Typical workflow: install the package, then call functions to get gradient limits and slew rate for use with pypulseq.
 
-Nim:
+### Nim
 - The JSON file(s) are distributed with the package. After installation or by copying the JSON, Nim programs can parse MRSystems.json with any JSON library to obtain the same system specifications.
 
 ## Python API
@@ -75,8 +79,13 @@ let spec = getPulseqSpecs("Siemens", "Prisma")
 Installation note:
 - The JSON data is plain MRSystems.json bundled with the project. You can install the Nim module as a Nim package (nimble) or include the module and JSON in your Nim project. Ensure the JSON path is correct relative to your installed module or copy MRSystems.json alongside the Nim module when packaging.
 
-## Reference
+## Credits and disclaimer 
 
+The JSON file has been compiled with the help of a large language model (Claude Opus 4.6) from publicly available sources and may not be exhaustive or perfectly accurate. No warranty is implied or explicitly granted. Please verify the specifications with official sources if you intend to use them for critical applications.
+
+## References
+
+- pulseq - open format for MR sequences: https://github.com/pulseq/pulseq/
 - pypulseq — pulse sequence toolbox for Python: https://github.com/imr-framework/pypulseq
 
 ## Contributing
