@@ -29,7 +29,7 @@ proc listModels*(manufacturer: string): seq[string] =
 proc listGradients*(manufacturer: string, model: string): seq[string] =
     toSeq(systems[manufacturer][model]["gradient_configurations"].keys)
 
-proc getPulseqSpecs*(manufacturer: string, model: string, gradient: string = ""): SystemSpec =
+proc getPulseqSpecs*(manufacturer: string, model: string, gradient: string = "", scaleGradients: float64 = 1.0, scaleSlewRate: float64 = 1.0): SystemSpec =
     var gradName: string
     if gradient == "":
         gradName = toSeq(systems[manufacturer][model]["gradient_configurations"].getFields().keys)[0]
@@ -41,7 +41,7 @@ proc getPulseqSpecs*(manufacturer: string, model: string, gradient: string = "")
 
     result = SystemSpec(
         B0: float64(selectedSystem["B0_field_strength_T"].getFloat()),
-        maxSlew: float64(gradientProperties["max_slew_rate_T_per_m_per_s"].getFloat()),
-        maxGrad: float64(gradientProperties["max_gradient_strength_mT_per_m"].getFloat()),
+        maxSlew: float64(gradientProperties["max_slew_rate_T_per_m_per_s"].getFloat()) * scaleSlewRate,
+        maxGrad: float64(gradientProperties["max_gradient_strength_mT_per_m"].getFloat() * scaleGradients),
         slewUnit: "T/m/s", 
         gradUnit: "mT/m")

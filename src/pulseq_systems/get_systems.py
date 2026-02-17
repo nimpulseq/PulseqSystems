@@ -60,7 +60,7 @@ def list_gradients(manufacturer: str, model: str) -> list:
     """
     return list(_systems[manufacturer][model]['gradient_configurations'].keys())
 
-def get_pulseq_specs(manufacturer: str, model: str, gradient: str = None) -> dict:
+def get_pulseq_specs(manufacturer: str, model: str, gradient: str = None, scale_gradients: float = 1.0, scale_slew_rate: float = 1.0) -> dict:
     """Retrieve pulseq specifications for the specified system.
 
     If `gradient` is None the first available gradient configuration is used.
@@ -69,6 +69,8 @@ def get_pulseq_specs(manufacturer: str, model: str, gradient: str = None) -> dic
         manufacturer (str): Manufacturer name.
         model (str): Model name.
         gradient (str, optional): Gradient configuration name. Defaults to None.
+        scale_gradients (float, optional): Scaling factor for gradients (default: 1.0)
+        scale_slew_rate (float, optional): Scaling factor for the slew rate (default: 1.0)
 
     Returns:
         dict: Dictionary with keys 'grad_unit', 'max_grad', 'max_slew', and 'B0'.
@@ -79,9 +81,9 @@ def get_pulseq_specs(manufacturer: str, model: str, gradient: str = None) -> dic
         gradient = next(iter(model_spec))
     return {
         'grad_unit': 'mT/m',
-        'max_grad': float(model_spec[gradient]['max_gradient_strength_mT_per_m']),
+        'max_grad': float(model_spec[gradient]['max_gradient_strength_mT_per_m']) * scale_gradients,
         'slew_unit': 'T/m/s',
-        'max_slew': float(model_spec[gradient]['max_slew_rate_T_per_m_per_s']),
+        'max_slew': float(model_spec[gradient]['max_slew_rate_T_per_m_per_s']) * scale_slew_rate,
         'B0': float(_systems[manufacturer][model]['B0_field_strength_T'])
     }
 

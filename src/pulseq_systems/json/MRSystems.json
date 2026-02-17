@@ -590,5 +590,171 @@
         "https://www.tecmedafrica.com/products/vantage-elan-1-5t-mri-system/"
       ]
     }
+  },
+  "United Imaging Healthcare": {
+    "uMR Jupiter 5T": {
+      "category": "ultra-high-field whole-body",
+      "B0_field_strength_T": 5.0,
+      "bore_diameter_cm": 60,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 120,
+          "max_slew_rate_T_per_m_per_s": 200
+        }
+      },
+      "notes": "World's first whole-body 5T MRI. 8-channel parallel transmit coil for uniform B1 field. 3.5 MW gradient power amplifier. 3rd-order B0 shimming. Fits in standard 3T-sized room. Weight ~15 tonnes. FDA cleared 2024 (K233673). CE marking pending as of ECR 2023 launch.",
+      "year_introduced": 2023,
+      "FDA_clearance": "2024",
+      "source_urls": [
+        "https://www.auntminnie.com/clinical-news/mri/article/15632935/united-unveils-5t-mri-scanner-at-ecr-2023",
+        "https://global.united-imaging.com/en/product-service/products/mr/umr-jupiter",
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf23/K233673.pdf",
+        "https://axisimagingnews.com/radiology-products/imaging-equipment/mri/fda-clears-united-imagings-5t-mri-system"
+      ]
+    },
+    "uMR Ultra": {
+      "category": "premium clinical and research 3T",
+      "B0_field_strength_T": 3.0,
+      "bore_diameter_cm": 70,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 100,
+          "max_slew_rate_T_per_m_per_s": 200
+        }
+      },
+      "notes": "Advanced 3T with LIVE imaging capability (dynamic whole-body visualization). Up to 192 independent RF channels. Up to 96-channel coil capability. 3.5 MW gradient power amplifier. uAIFI.LIVE platform. First 70 cm wide-bore MR to achieve 100 mT/m. CE marked. FDA cleared 2025. Debuted RSNA 2024.",
+      "year_introduced": 2024,
+      "FDA_clearance": "2025",
+      "source_urls": [
+        "https://eu.united-imaging.com/en/product-service/products/mr/umr-ultra",
+        "https://global.united-imaging.com/en/product-service/products/mr/umr-ultra",
+        "https://healthcare-in-europe.com/en/news/united-imaging-umi-panvivo-umr-ultra.html",
+        "https://usa.united-imaging.com/news/press/united-imaging-broadens-imaging-portfolio-and-advances-native-ai-at-rsna-2025"
+      ]
+    },
+    "uMR 790": {
+      "category": "research 3T",
+      "B0_field_strength_T": 3.0,
+      "bore_diameter_cm": 60,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 100,
+          "max_slew_rate_T_per_m_per_s": 200
+        }
+      },
+      "notes": "Research-focused 3T system. Full-digital GPA with 2.0 MW peak power. US site lists 90 mT/m (simultaneous on each axis); global site lists 100 mT/m. 32/48 RF receive channels. uCS 2.0 platform. ADEPT research platform for data sharing.",
+      "year_introduced": 2021,
+      "source_urls": [
+        "https://global.united-imaging.com/en/product-service/products/mr/umr-790",
+        "https://usa.united-imaging.com/products/magnetic-resonance/umr-790"
+      ]
+    },
+    "uMR Omega": {
+      "category": "ultra-wide-bore clinical 3T",
+      "B0_field_strength_T": 3.0,
+      "bore_diameter_cm": 75,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 45,
+          "max_slew_rate_T_per_m_per_s": 200
+        }
+      },
+      "notes": "World's first 75 cm ultra-wide bore 3T. FOV 60x60x50 cm3. Homogeneity 0.08 ppm @ 30 cm DSV. 3.5 MW GPA. Table capacity 310 kg. In-bore starlight lighting. QScan quiet scanning. SuperFlex coils. EasySense contactless respiratory monitoring.",
+      "year_introduced": 2022,
+      "source_urls": [
+        "https://eu.united-imaging.com/en/product-service/products/mr/omega",
+        "https://usa.united-imaging.com/products/magnetic-resonance/omega"
+      ]
+    },
+    "uMR 780": {
+      "category": "clinical 3T",
+      "B0_field_strength_T": 3.0,
+      "bore_diameter_cm": 65,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 42,
+          "max_slew_rate_T_per_m_per_s": 220
+        }
+      },
+      "notes": "Clinical 3T with ACS (AI-assisted Compressed Sensing) and DeepRecon. 48 RF receive channels. 170 cm short magnet. uCS 2.0 platform with up to 36x acceleration and 0.5 mm isotropic resolution. HealthManagement.org lists 42 mT/m & 220 T/m/s simultaneous on each axis. FDA cleared variant lists 42/200.",
+      "year_introduced": 2019,
+      "source_urls": [
+        "https://eu.united-imaging.com/en/product-service/products/mr/umr-780",
+        "https://healthmanagement.org/products/view/all/umr-780",
+        "https://usa.united-imaging.com/product/umr-780/"
+      ]
+    },
+    "uMR 680": {
+      "category": "premium clinical 1.5T",
+      "B0_field_strength_T": 1.5,
+      "bore_diameter_cm": 70,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 45,
+          "max_slew_rate_T_per_m_per_s": 200
+        }
+      },
+      "notes": "Wide-bore 1.5T with uAIFI platform (DeepRecon, EasySense, QScan). 45 mT/m & 200 T/m/s simultaneous on each axis. Aims for '3.0T-like' image quality through DL reconstruction. Starlight in-bore lighting. Available as mobile system configuration.",
+      "year_introduced": 2022,
+      "source_urls": [
+        "https://eu.united-imaging.com/en/product-service/products/mr/umr-680",
+        "https://global.united-imaging.com/en/product-service/products/mr/umr-680"
+      ]
+    },
+    "uMR 670": {
+      "category": "mid-range clinical 1.5T",
+      "B0_field_strength_T": 1.5,
+      "bore_diameter_cm": 70,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 33,
+          "max_slew_rate_T_per_m_per_s": 160
+        },
+        "high performance": {
+          "max_gradient_strength_mT_per_m": 45,
+          "max_slew_rate_T_per_m_per_s": 200
+        }
+      },
+      "notes": "Wide-bore 1.5T with uAIFI DeepRecon and EasySense. 24 or 48 RF channels. Internal product comparison shows two gradient tiers: 33/160 and 45/200. QScan quiet scanning.",
+      "year_introduced": 2021,
+      "source_urls": [
+        "https://eu.united-imaging.com/en/product-service/products/mr/umr-670",
+        "https://pdfcoffee.com/umr-introduction-2023-pdf-free.html"
+      ]
+    },
+    "uMR 588": {
+      "category": "clinical 1.5T",
+      "B0_field_strength_T": 1.5,
+      "bore_diameter_cm": 60,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 33,
+          "max_slew_rate_T_per_m_per_s": 160
+        }
+      },
+      "notes": "Clinical 1.5T with uCS compressed sensing platform (first 1.5T with CS). 24 RF channels. DeepRecon DL reconstruction. 16x acceleration for dynamic abdomen imaging.",
+      "year_introduced": 2018,
+      "source_urls": [
+        "https://eu.united-imaging.com/en/product-service/products/mr/umr-588",
+        "https://pdfcoffee.com/umr-introduction-2023-pdf-free.html"
+      ]
+    },
+    "uMR 580": {
+      "category": "entry-level clinical 1.5T",
+      "B0_field_strength_T": 1.5,
+      "bore_diameter_cm": 60,
+      "gradient_configurations": {
+        "standard": {
+          "max_gradient_strength_mT_per_m": 33,
+          "max_slew_rate_T_per_m_per_s": 125
+        }
+      },
+      "notes": "Entry-level 1.5T. 16 RF channels. Full digital gradient control. 150 cm magnet length. 850 L liquid helium with zero boil-off. Active shielding. Max effective amplitude 57 mT/m, max effective slew rate 216 T/m/s (vector sum). 100% duty cycle.",
+      "year_introduced": 2018,
+      "source_urls": [
+        "https://eu.united-imaging.com/en/product-service/products/mr/umr-580",
+        "https://www.studocu.com/co/document/institucion-universitaria-digital-de-antioquia/administracion-en-seguridad-y-salud-en-el-trabajo/ce-103307-u-mr-580-datasheet/105564988"
+      ]
+    }
   }
 }
