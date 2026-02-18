@@ -7,6 +7,7 @@ configurations and basic pulseq specifications.
 
 import json
 import sys
+import math
 
 if sys.version_info >= (3, 9):
     from importlib.resources import files
@@ -79,6 +80,13 @@ def get_pulseq_specs(manufacturer: str, model: str, gradient: str = None, scale_
     if not gradient:
         # select the first available gradient name in a safe, iterator-based way
         gradient = next(iter(model_spec))
+
+    if model_spec[gradient]['is_gradient_strength_per_axis'] == False:
+        scale_gradients /= math.sqrt(3)
+
+    if model_spec[gradient]['is_slew_rate_per_axis'] == False:
+        scale_slew_rate /= math.sqrt(3)
+
     return {
         'grad_unit': 'mT/m',
         'max_grad': float(model_spec[gradient]['max_gradient_strength_mT_per_m']) * scale_gradients,

@@ -2,6 +2,7 @@ import std/json
 import std/paths
 import std/sequtils
 import std/tables
+import std/math
 
 type 
     SystemSpec* = object
@@ -38,6 +39,14 @@ proc getPulseqSpecs*(manufacturer: string, model: string, gradient: string = "",
     
     let selectedSystem = systems[manufacturer][model]
     let gradientProperties = selectedSystem["gradient_configurations"][gradName]
+
+    var scaleGradients = scaleGradients
+    var scaleSlewRate = scaleSlewRate
+    if gradientProperties["is_gradient_strength_per_axis"].kind != JNull and gradientProperties["is_gradient_strength_per_axis"].getBool == false:
+        scaleGradients /= sqrt(3.0)
+    
+    if gradientProperties["is_slew_rate_per_axis"].kind != JNull and gradientProperties["is_slew_rate_per_axis"].getBool == false:
+        scaleSlewRate /= sqrt(3.0)
 
     result = SystemSpec(
         B0: float64(selectedSystem["B0_field_strength_T"].getFloat()),

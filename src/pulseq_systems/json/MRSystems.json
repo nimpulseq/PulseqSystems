@@ -1,11 +1,11 @@
 {
   "_metadata": {
     "description": "MRI system gradient and field specifications for the four major human MRI manufacturers",
-    "date_compiled": "2026-02-14",
+    "date_compiled": "2026-02-18",
     "units": {
       "B0_field_strength": "T",
-      "max_gradient_strength": "mT/m (per axis)",
-      "max_slew_rate": "T/m/s (per axis)"
+      "max_gradient_strength": "mT/m",
+      "max_slew_rate": "T/m/s"
     },
     "notes": [
       "All gradient specs are per-axis values unless otherwise noted.",
@@ -22,7 +22,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 135,
-          "max_slew_rate_T_per_m_per_s": 250
+          "max_slew_rate_T_per_m_per_s": 250,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2023,
@@ -39,7 +41,9 @@
       "gradient_configurations": {
         "XR Gradients": {
           "max_gradient_strength_mT_per_m": 80,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2017,
@@ -56,7 +60,9 @@
       "gradient_configurations": {
         "Gemini Gradients": {
           "max_gradient_strength_mT_per_m": 200,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2024,
@@ -73,11 +79,15 @@
       "gradient_configurations": {
         "XT Gradients": {
           "max_gradient_strength_mT_per_m": 60,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         },
         "XQ Gradients": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2017,
@@ -93,11 +103,15 @@
       "gradient_configurations": {
         "XJ Gradients": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 125
+          "max_slew_rate_T_per_m_per_s": 125,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         },
         "XQ Gradients": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2018,
@@ -113,7 +127,9 @@
       "gradient_configurations": {
         "XR 80 200 Gradients": {
           "max_gradient_strength_mT_per_m": 80,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2013,
@@ -130,7 +146,9 @@
       "gradient_configurations": {
         "XQ Gradients": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2012,
@@ -146,11 +164,15 @@
       "gradient_configurations": {
         "XJ Gradients standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 125
+          "max_slew_rate_T_per_m_per_s": 125,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         },
         "XQ Gradients optional": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2018,
@@ -166,11 +188,15 @@
       "gradient_configurations": {
         "XJ Gradients standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 125
+          "max_slew_rate_T_per_m_per_s": 125,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         },
         "XQ Gradients optional": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2012,
@@ -185,11 +211,15 @@
       "gradient_configurations": {
         "XJ Gradients": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 125
+          "max_slew_rate_T_per_m_per_s": 125,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         },
         "XQ Gradients optional": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2018,
@@ -204,7 +234,9 @@
       "gradient_configurations": {
         "SQ Gradients": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2014,
@@ -219,8 +251,10 @@
       "bore_diameter_cm": 80,
       "gradient_configurations": {
         "standard": {
-          "max_gradient_strength_mT_per_m": 22,
-          "max_slew_rate_T_per_m_per_s": 55
+          "max_gradient_strength_mT_per_m": 25,
+          "max_slew_rate_T_per_m_per_s": 55,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2021,
@@ -236,8 +270,10 @@
       "bore_diameter_cm": 80,
       "gradient_configurations": {
         "standard": {
-          "max_gradient_strength_mT_per_m": 22,
-          "max_slew_rate_T_per_m_per_s": 55
+          "max_gradient_strength_mT_per_m": 25,
+          "max_slew_rate_T_per_m_per_s": 55,
+          "is_gradient_strength_per_axis": false,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2023,
@@ -255,7 +291,9 @@
       "gradient_configurations": {
         "SuperXG Gradients": {
           "max_gradient_strength_mT_per_m": 80,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2025,
@@ -272,7 +310,9 @@
       "gradient_configurations": {
         "SuperG Gradients": {
           "max_gradient_strength_mT_per_m": 80,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2017,
@@ -288,7 +328,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 44,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2022,
@@ -305,7 +347,9 @@
       "gradient_configurations": {
         "HyperG head gradient": {
           "max_gradient_strength_mT_per_m": 300,
-          "max_slew_rate_T_per_m_per_s": 750
+          "max_slew_rate_T_per_m_per_s": 750,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2025,
@@ -322,7 +366,9 @@
       "gradient_configurations": {
         "XRM Gradients": {
           "max_gradient_strength_mT_per_m": 44,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2016,
@@ -339,7 +385,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 120
+          "max_slew_rate_T_per_m_per_s": 120,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2014,
@@ -354,7 +402,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 44,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2012,
@@ -369,7 +419,9 @@
       "gradient_configurations": {
         "eXtreme Gradients": {
           "max_gradient_strength_mT_per_m": 50,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2009,
@@ -386,11 +438,15 @@
       "gradient_configurations": {
         "dual mode high slew": {
           "max_gradient_strength_mT_per_m": 40,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         },
         "dual mode high amplitude": {
           "max_gradient_strength_mT_per_m": 60,
-          "max_slew_rate_T_per_m_per_s": 100
+          "max_slew_rate_T_per_m_per_s": 100,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2007,
@@ -407,7 +463,9 @@
       "gradient_configurations": {
         "XP Gradients": {
           "max_gradient_strength_mT_per_m": 65,
-          "max_slew_rate_T_per_m_per_s": 220
+          "max_slew_rate_T_per_m_per_s": 220,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2022,
@@ -423,7 +481,9 @@
       "gradient_configurations": {
         "Vega HP Gradients": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 220
+          "max_slew_rate_T_per_m_per_s": 220,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2018,
@@ -440,12 +500,16 @@
         "dual mode high slew": {
           "max_gradient_strength_mT_per_m": 40,
           "max_slew_rate_T_per_m_per_s": 200,
-          "notes": "High slew rate mode"
+          "notes": "High slew rate mode",
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         },
         "dual mode high amplitude": {
           "max_gradient_strength_mT_per_m": 80,
           "max_slew_rate_T_per_m_per_s": 100,
-          "notes": "High amplitude mode"
+          "notes": "High amplitude mode",
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2012,
@@ -460,7 +524,9 @@
       "gradient_configurations": {
         "Omega HP Gradients": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2019,
@@ -477,11 +543,15 @@
       "gradient_configurations": {
         "Omega HP Gradients": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         },
         "Omega standard Gradients": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 120
+          "max_slew_rate_T_per_m_per_s": 120,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2010,
@@ -497,12 +567,16 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 180
+          "max_slew_rate_T_per_m_per_s": 180,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         },
         "Quasar Dual maximum amplitude mode": {
           "max_gradient_strength_mT_per_m": 66,
           "max_slew_rate_T_per_m_per_s": 180,
-          "notes": "Maximum values across modes; max amplitude and max slew rate may not be simultaneous."
+          "notes": "Maximum values across modes; max amplitude and max slew rate may not be simultaneous.",
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "year_introduced": 2004,
@@ -520,11 +594,15 @@
       "gradient_configurations": {
         "Saturn X Gradient": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": null,
+          "is_slew_rate_per_axis": null
         },
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": null,
+          "is_slew_rate_per_axis": null
         }
       },
       "year_introduced": 2024,
@@ -540,11 +618,15 @@
       "gradient_configurations": {
         "Saturn Gradient": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": null,
+          "is_slew_rate_per_axis": null
         },
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": null,
+          "is_slew_rate_per_axis": null
         }
       },
       "year_introduced": 2019,
@@ -559,11 +641,15 @@
       "gradient_configurations": {
         "Saturn Gradient": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": null,
+          "is_slew_rate_per_axis": null
         },
         "standard": {
           "max_gradient_strength_mT_per_m": 34,
-          "max_slew_rate_T_per_m_per_s": 155
+          "max_slew_rate_T_per_m_per_s": 155,
+          "is_gradient_strength_per_axis": null,
+          "is_slew_rate_per_axis": null
         }
       },
       "year_introduced": 2018,
@@ -580,7 +666,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 125
+          "max_slew_rate_T_per_m_per_s": 125,
+          "is_gradient_strength_per_axis": null,
+          "is_slew_rate_per_axis": null
         }
       },
       "year_introduced": 2014,
@@ -599,7 +687,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 120,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "World's first whole-body 5T MRI. 8-channel parallel transmit coil for uniform B1 field. 3.5 MW gradient power amplifier. 3rd-order B0 shimming. Fits in standard 3T-sized room. Weight ~15 tonnes. FDA cleared 2024 (K233673). CE marking pending as of ECR 2023 launch.",
@@ -619,7 +709,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 100,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "Advanced 3T with LIVE imaging capability (dynamic whole-body visualization). Up to 192 independent RF channels. Up to 96-channel coil capability. 3.5 MW gradient power amplifier. uAIFI.LIVE platform. First 70 cm wide-bore MR to achieve 100 mT/m. CE marked. FDA cleared 2025. Debuted RSNA 2024.",
@@ -639,7 +731,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 100,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "Research-focused 3T system. Full-digital GPA with 2.0 MW peak power. US site lists 90 mT/m (simultaneous on each axis); global site lists 100 mT/m. 32/48 RF receive channels. uCS 2.0 platform. ADEPT research platform for data sharing.",
@@ -656,7 +750,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "World's first 75 cm ultra-wide bore 3T. FOV 60x60x50 cm3. Homogeneity 0.08 ppm @ 30 cm DSV. 3.5 MW GPA. Table capacity 310 kg. In-bore starlight lighting. QScan quiet scanning. SuperFlex coils. EasySense contactless respiratory monitoring.",
@@ -673,7 +769,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 42,
-          "max_slew_rate_T_per_m_per_s": 220
+          "max_slew_rate_T_per_m_per_s": 220,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "Clinical 3T with ACS (AI-assisted Compressed Sensing) and DeepRecon. 48 RF receive channels. 170 cm short magnet. uCS 2.0 platform with up to 36x acceleration and 0.5 mm isotropic resolution. HealthManagement.org lists 42 mT/m & 220 T/m/s simultaneous on each axis. FDA cleared variant lists 42/200.",
@@ -691,7 +789,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "Wide-bore 1.5T with uAIFI platform (DeepRecon, EasySense, QScan). 45 mT/m & 200 T/m/s simultaneous on each axis. Aims for '3.0T-like' image quality through DL reconstruction. Starlight in-bore lighting. Available as mobile system configuration.",
@@ -708,11 +808,15 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 160
+          "max_slew_rate_T_per_m_per_s": 160,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         },
         "high performance": {
           "max_gradient_strength_mT_per_m": 45,
-          "max_slew_rate_T_per_m_per_s": 200
+          "max_slew_rate_T_per_m_per_s": 200,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "Wide-bore 1.5T with uAIFI DeepRecon and EasySense. 24 or 48 RF channels. Internal product comparison shows two gradient tiers: 33/160 and 45/200. QScan quiet scanning.",
@@ -729,7 +833,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 160
+          "max_slew_rate_T_per_m_per_s": 160,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "Clinical 1.5T with uCS compressed sensing platform (first 1.5T with CS). 24 RF channels. DeepRecon DL reconstruction. 16x acceleration for dynamic abdomen imaging.",
@@ -746,7 +852,9 @@
       "gradient_configurations": {
         "standard": {
           "max_gradient_strength_mT_per_m": 33,
-          "max_slew_rate_T_per_m_per_s": 125
+          "max_slew_rate_T_per_m_per_s": 125,
+          "is_gradient_strength_per_axis": true,
+          "is_slew_rate_per_axis": true
         }
       },
       "notes": "Entry-level 1.5T. 16 RF channels. Full digital gradient control. 150 cm magnet length. 850 L liquid helium with zero boil-off. Active shielding. Max effective amplitude 57 mT/m, max effective slew rate 216 T/m/s (vector sum). 100% duty cycle.",
